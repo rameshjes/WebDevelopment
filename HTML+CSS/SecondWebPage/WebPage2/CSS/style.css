@@ -120,7 +120,6 @@ section#boxes{
   color:#ffffff;
   background: #35424a;
   border-bottom:#e8491d 3px solid;
-
 }
 
 #newsletter h1{
@@ -138,4 +137,39 @@ section#boxes{
 #newsletter button{
   margin-top: 10px;
   display: block;
+}
+
+/* About us  */
+section{
+  border-bottom: #e8491d 3px solid;
+}
+article#main-col {
+  float:left;
+  width: 65%;
+  text-align: justify;
+  text-justify: inter-word; /* Increases/Decreases the space between words         */
+}
+
+/* Contact form        */
+input[type=text], select{
+  width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+section#contactform, input[type=email]{
+  width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+section#contactform, button[type=submit]{
+    width: 10%;
+    height: 20px;
 }
