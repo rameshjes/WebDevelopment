@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!.. The character encoding (charset) declaration is also very simple ..>
+    <!.. View port is visibility area for users, varies with device and web
+         designer's control it using meta tag ..>
+    <meta name="viewport" content="width=device-width">
+    <!.. You probably need to do SEO, therefore you need to provide
+          keywords, description, authors etcetra ..>
+    <meta name="description" content="Web Design Tutorial">
+    <meta name="keywords" content="web design, web tutorial for beginners">
+    <meta name="author" content="Ramesh Kumar">
+    <meta charset="utf-8">
+    <title> Tutorial Web Design | About </title>
+    <!.. To Link Css file ..>
+    <link rel ="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <!.. Class and ID concept, to give margin or spaces, we need to control
+      them Therefore we will create class as container so we can control all
+       elements together, class and id are different, an id is for something
+        that is unique, like background for each section can be different
+        therefore we can put that in id, where class is something you can
+        use over and over ..>
+      <div class="container">
+          <div id="branding">  <!.. Here we are giving id, because we will not
+            use this anywhere else ..>
+            <h1><span class="highlight"> Web </span> Design Tutorial </h1> <!.. Span used because
+            from CSS we are only changing color of this, and make sure it shud
+            go to next line, therefore we span it, inline elemetn ..>
+          </div>
+          <!.. Since we have Home, About, services as navigation ..>
+          <nav>
+          <ul>
+            <!.. Since in CSS file, we have put class current therefore,
+            we want to give orange color to home nav, we add class here ..>
+            <li> <a  href="index.html">Home</a></li>
+            <li class="current"> <a href="about.html">About</a></li>
+            <li> <a href="services.html">Services</a></li>
+          </ul>
+          </nav>
+     </div>
+    </header>
+
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter  </h1>
+        <form>
+          <!..Placeholder is used to display text, when user doesn't enter
+             anything or gives hint to user..>
+          <input type="email"placeholder="Enter Email...">
+          <button type="submit"class="button_1">Subscriber</button>
+        </form>
+      </div>
+    </section>
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">About Us </h1>
+        <p>When you have a great story about how your product or service was built to change lives, share it. The "About Us" page is a great place for it to live, too. Good stories humanize your brand, providing context and meaning for your product. What’s more, good stories are sticky -- which means people are more likely to connect with them and pass them on.   </p>
+        <p class="dark">Yellow Leaf Hammocks tells users about its product by describing how the hammocks empower artisan weavers and their families. The company breaks down different pieces of the story into sections that combine words and easily digestible graphics, painting a picture instead of big chunks of text. </p>
+
+      </article>
+      <!..Side bar is by default flat, not like sidebar , you need to handle it by using CSS..>
+      <aside id="sidebar">
+        <div class="dark">
+        <h3>What I DO </h3>
+        <p>When you have a great story about how your product or service was built to change lives, share it.  </p>
+      </div>
+
+      </aside>
+    </div>
+  </section>
+  <footer>
+    <p> Web Design,Copyright, &copy; 2017</p>
+  </footer>
+
+  </body>
+</html>
