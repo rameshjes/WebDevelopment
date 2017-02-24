@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!.. The character encoding (charset) declaration is also very simple ..>
+    <!.. View port is visibility area for users, varies with device and web
+         designer's control it using meta tag ..>
+    <meta name="viewport" content="width=device-width">
+    <!.. You probably need to do SEO, therefore you need to provide
+          keywords, description, authors etcetra ..>
+    <meta name="description" content="Web Design Tutorial">
+    <meta name="keywords" content="web design, web tutorial for beginners">
+    <meta name="author" content="Ramesh Kumar">
+    <meta charset="utf-8">
+    <title> Tutorial Web Design | Welcome </title>
+    <!.. To Link Css file ..>
+    <link rel ="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <!.. Class and ID concept, to give margin or spaces, we need to control
+      them Therefore we will create class as container so we can control all
+       elements together, class and id are different, an id is for something
+        that is unique, like background for each section can be different
+        therefore we can put that in id, where class is something you can
+        use over and over ..>
+      <div class="container">
+          <div id="branding">  <!.. Here we are giving id, because we will not
+            use this anywhere else ..>
+            <h1><span class="highlight"> Web </span> Design Tutorial </h1> <!.. Span used because
+            from CSS we are only changing color of this, and make sure it shud
+            go to next line, therefore we span it, inline elemetn ..>
+          </div>
+          <!.. Since we have Home, About, services as navigation ..>
+          <nav>
+          <ul>
+            <!.. Since in CSS file, we have put class current therefore,
+            we want to give orange color to home nav, we add class here ..>
+            <li class="current" > <a  href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li> <a href="services.html">Services</a></li>
+          </ul>
+          </nav>
+     </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1> Affordable Tutorial for Beginners </h1>
+        <p> Web design apps like Dreamweaver are fine,
+          but if you want to be able to build modern responsive HTML5 based
+          websites, then these apps will get in the way of you learning
+          (because you have to learn the app on top of the code) … and will
+          actually slow you down!</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter  </h1>
+        <form>
+          <!..Placeholder is used to display text, when user doesn't enter
+             anything or gives hint to user..>
+          <input type="email"placeholder="Enter Email...">
+          <button type="submit"class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  <section id="boxes">
+    <div class="container">
+      <div class="box">
+        <img src="./images/html5.png" width="">
+        <h3>HTML5 Markup</h3>
+        <p>HTML5 is the latest and most enhanced version of HTML.Technically,
+          HTML is not a programming language, but rather a mark up language.</p>
+      </div>
+      <div class="box">
+        <img src="./images/CSS3.png">
+        <h3>CSS3 Styling</h3>
+        <p>Cascading Style Sheets (CSS) is a style sheet language used for
+          describing the look and formatting of a document written in a
+          markup language.</p>
+      </div>
+      <div class="box">
+        <img src="./images/graphic-design.png">
+        <h3>Graphic Design</h3>
+        <p>A graphic designer is a professional within the graphic design and
+          graphic arts industry who
+          assembles together images, typography, or motion graphics to create a
+          piece of design.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p> Web Design,Copyright, &copy; 2017</p>
+  </footer>
+
+  </body>
+</html>

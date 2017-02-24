@@ -1,0 +1,235 @@
+body{
+
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  /* shortcut you can do font:15px/1.5 Arial,Helvetica,sans-serif */
+  padding:0; /* Padding is area of margin between content of element and border
+  padding over h1 is by default*/
+  margin:0;
+  background-color: #f4f4f7;
+}
+/*When class is container you use dot to start */
+/*If you have id, then you use number sign(#) */
+/* This is for Global*/
+.container{
+  width:80%;   /* we want it to be responsive, therefore we will not set
+  to specific pixels but percentage  */
+  /*  Now we want to move everything to middle not on exact left side*/
+  margin: auto;
+  /*overflow is used to set when user change size of window, if it is set
+  to hidden then you will get scroll bar and your text will be hidden  */
+  overflow: hidden;
+}
+/*This is global and will make all unordered lists with 0 margin and pading */
+ul{
+  /* by default unordered list hav margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+}
+/*Global dark background *
+We will add this background to about page, therefore, we will go
+to about.html and wrap it with class named as dark  */
+.dark{
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Header */
+header{
+  background: #35424a;
+  color: #ffffff;  /* Changes color of header text and bullets of nav */
+  /*for links we have to change color separately */
+  padding-top: 30px;
+  min-height: 70px;  /*When size of your window is adjusted, we want to adjust
+  height of header accordingly */
+  border-bottom: #e8491d 3px solid; /* border for header with pixel and syle */
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;/*To remove underline from text */
+  text-transform: uppercase; /*You don't need to make text uppercase in markup
+  you can make using CSS */
+  font-size: 16px
+}
+ /* Next thing we want to make nav files horizontal*/
+/*you can also put ul global so all ul in webpage can have 0 margin
+and padding */
+header ul{
+  /* by default unordered list hav margin and padding */
+  margin: 0;
+  padding: 0;
+}
+/* For list items */
+header li{
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px ; /*top, right, bottom, left */
+}
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+/* Now we want to give color to one word in our header,*/
+header .highlight, header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #cccccc;  /* gray colour */
+  font-weight: bold;
+}
+
+/* Now showcase */
+
+#showcase{
+  min-height: 400px;
+  /* Image does not appears completely, therefore we will move it*/
+  /*  0 -400px is for x axis and y axis -400 means image shud move up*/
+  background: url('../images/showcase.jpg') no-repeat 0 -400px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#showcase h1{
+
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px
+}
+#showcase p{
+  font-size: 20px;
+}
+
+/*Newsletter      */
+#newsletter{
+  padding: 15px;
+  color:#ffffff;
+  background: #35424a;
+  border-bottom:#e8491d 3px solid;
+}
+
+#newsletter h1{
+  float: left;
+}
+#newsletter form{
+  float:right;
+  margin-top: 20px;
+}
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: 60px;
+}
+
+/*side bar        */
+aside#sidebar{
+  float:right;
+  width: 30%;
+  margin-top:10px;
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding:5px;
+}
+
+/* Article */
+article#main-col{
+  float:left;
+  width: 65%;
+}
+/* Services form */
+
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+}
+
+
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #e8491d;
+  text-align: center;
+}
+
+/*Media Queries          */
+@media query(max-width:768px) {
+header branding,
+header nav,
+header nav li,
+#newsletter h1,
+@newsletter form,
+#boxes .box,
+article#main-col,
+aside#sidebar
+{
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+header{
+  padding-bottom: 20px;
+}
+#showcase h1{
+  margin-top: 40px;
+}
+
+#newsletter button, .quote button{
+  display: block;  /*Because when we adjust window, button can go to next line    */
+  width: 100%;
+}
+
+#newsletter form input[type="email"]{
+  width:100%;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+}

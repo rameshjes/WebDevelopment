@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!.. The character encoding (charset) declaration is also very simple ..>
+    <!.. View port is visibility area for users, varies with device and web
+         designer's control it using meta tag ..>
+    <meta name="viewport" content="width=device-width">
+    <!.. You probably need to do SEO, therefore you need to provide
+          keywords, description, authors etcetra ..>
+    <meta name="description" content="Web Design Tutorial">
+    <meta name="keywords" content="web design, web tutorial for beginners">
+    <meta name="author" content="Ramesh Kumar">
+    <meta charset="utf-8">
+    <title> Tutorial Web Design | Services </title>
+    <!.. To Link Css file ..>
+    <link rel ="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+
+    <header>
+      <!.. Class and ID concept, to give margin or spaces, we need to control
+      them Therefore we will create class as container so we can control all
+       elements together, class and id are different, an id is for something
+        that is unique, like background for each section can be different
+        therefore we can put that in id, where class is something you can
+        use over and over ..>
+      <div class="container">
+          <div id="branding">  <!.. Here we are giving id, because we will not
+            use this anywhere else ..>
+            <h1><span class="highlight"> Web </span> Design Tutorial </h1> <!.. Span used because
+            from CSS we are only changing color of this, and make sure it shud
+            go to next line, therefore we span it, inline elemetn ..>
+          </div>
+          <!.. Since we have Home, About, services as navigation ..>
+          <nav>
+          <ul>
+            <!.. Since in CSS file, we have put class current therefore,
+            we want to give orange color to home nav, we add class here ..>
+            <li> <a  href="index.html">Home</a></li>
+            <li> <a href="about.html">About</a></li>
+            <li class="current"> <a href="services.html">Services</a></li>
+          </ul>
+          </nav>
+     </div>
+    </header>
+
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe to our Newsletter  </h1>
+        <form>
+          <!..Placeholder is used to display text, when user doesn't enter
+             anything or gives hint to user..>
+          <input type="email"placeholder="Enter Email...">
+          <button type="submit"class="button_1">Subscriber</button>
+        </form>
+      </div>
+    </section>
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">Services </h1>
+        <ul id="services">
+          <li>
+            <h3> Website Design </h3>
+
+          <p> It is surprising the amount of services and apps that don’t really worry about their websites, about the way they show their product/idea to users. I browse around the web a lot, looking for inspiring websites to show here, and when it comes to services and apps, it’s usually hard to find nice designs. This is why today I gathered some examples in this niche that do care about design and deliver inspiring websites for their users.         </p>
+          <p> Pricing: $1,000 - $3,000     </p>
+          </li>
+          <li>
+            <h3> Website Maintenance </h3>
+
+          <p> It is surprising the amount of services and apps that don’t really worry about their websites, about the way they show their product/idea to users. I browse around the web a lot, looking for inspiring websites to show here, and when it comes to services and apps, it’s usually hard to find nice designs. This is why today I gathered some examples in this niche that do care about design and deliver inspiring websites for their users.         </p>
+          <p> Pricing: $250 per month     </p>
+          </li>
+
+          <li>
+            <h3> Website Hosting </h3>
+
+          <p> It is surprising the amount of services and apps that don’t really worry about their websites, about the way they show their product/idea to users. I browse around the web a lot, looking for inspiring websites to show here, and when it comes to services and apps, it’s usually hard to find nice designs. This is why today I gathered some examples in this niche that do care about design and deliver inspiring websites for their users.         </p>
+          <p> Pricing: $10  per month   </p>
+          </li>
+        </ul>
+      </article>
+
+      <!..Side bar is by default flat, not like sidebar , you need to handle it by using CSS..>
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>Get a Quote </h3>
+          <form class="quote">
+            <div>
+              <label> Name </label><br>
+              <input type="text" placeholder="Name">
+            </div>
+            <div>
+              <label> Email </label><br>
+              <input type="email" placeholder="Email Address">
+            </div>
+            <div>
+              <label> Message </label><br>
+              <textarea placeholder="Message"></textarea>
+            </div>
+            <div>
+              <button class="button_1" type="submit">Send</button>
+            </div>
+          </div>
+
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <p> Web Design,Copyright, &copy; 2017</p>
+  </footer>
+
+  </body>
+</html>
