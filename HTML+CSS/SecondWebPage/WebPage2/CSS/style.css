@@ -10,6 +10,14 @@ body{
   margin: auto;
   overflow: hidden;
 }
+/*background of side bar of contact     */
+.dark{
+    padding: 15px;
+    background: #f7f7f7  ;
+    /* color: #ffffff; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 header{
   background: #35424a;
@@ -151,8 +159,9 @@ article#main-col {
 }
 
 /* Contact form        */
+
 input[type=text], select{
-  width: 60%;
+    width: 60%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -172,4 +181,37 @@ section#contactform, input[type=email]{
 section#contactform, button[type=submit]{
     width: 10%;
     height: 20px;
+}
+
+#contactfont,p{
+  padding-bottom: 10px;
+  text-align: justify;
+}
+aside#sidebar{
+  float:right;
+  width: 30%;
+   margin-top:10px;
+   display: inline-block;
+}
+/*  This is for line spacing */
+aside{
+  line-height: 20%;
+  border:2px solid #e54d42;
+
+}
+aside#aside,h3{
+  text-transform: uppercase;
+  color: #e54d42;
+}
+aside#sidebar {
+  color:#bab8b8;
+  
+}
+
+#imageInSidebar, img{
+  width: 40px;
+  display: inline;  /*to display images into line          */
+}
+#imageInSidebar, img:hover{
+  highlight:gray;
 }
