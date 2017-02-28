@@ -145,6 +145,7 @@ section#boxes{
 #newsletter button{
   margin-top: 10px;
   display: block;
+  width: 70px;
 }
 
 /* About us  */
@@ -156,6 +157,17 @@ article#main-col {
   width: 65%;
   text-align: justify;
   text-justify: inter-word; /* Increases/Decreases the space between words         */
+}
+
+#main-col .imagesetting img{
+  width:60%;
+  float:inherit;
+
+}
+article#textsetting{
+  text-align: justify;
+  float:left;
+
 }
 
 /* Contact form        */
@@ -205,7 +217,6 @@ aside#aside,h3{
 }
 aside#sidebar {
   color:#bab8b8;
-  
 }
 
 #imageInSidebar, img{
@@ -214,4 +225,43 @@ aside#sidebar {
 }
 #imageInSidebar, img:hover{
   highlight:gray;
+}
+
+/* To make it responsive,we use Media Query
+Media Query is a technique introduced in CS3
+It uses @media rule to include a block of CSS properties only if a certain condition is true*/
+/*Be careful with writing media function     */
+@media(max-width: 768px){
+  header #header,
+  header nav,
+  #boxes .box{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header {
+    padding-bottom: 10px;
+  }
+
+  #newsletter button{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"]{
+    width: 100%;
+  }
+
+  aside#sidebar{
+    float:none;
+    width: 58%;
+     margin-top:10px;
+     display: inline-block;
+     margin-bottom: 10px;
+  }
+  section#contactform, button[type=submit]{
+      width: 20%;
+      height: 20px;
+  }
 }
