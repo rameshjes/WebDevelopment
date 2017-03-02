@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+    <script>src="./js/bootstrap.js" </script>
+    <title>Grid Basics</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-primary"> Grid Basics Example</h1>
+      <p> If we resize the browser, we see it is still responsive</p>
+      <p> There are 12 columns, so we can split them according to our web page </p>
+      <p> Here, we will split columns in a group of 4 </p>
+      <div class="row">
+        <div class="col-sm-4" style="background-color:#ced3db;"> Four columns </div>
+        <div class="col-sm-4" style="background-color:#4786ed;"> Four columns </div>
+        <div class="col-sm-4" style="background-color:#0cf2f2;"> Four columns </div>
+      </div>
+      <br>
+      <p class="text-primary"> Now we will split into unequal columns </p>
+      <div class="row">
+        <div class="col-sm-8" style="background-color:#03b5b5;"> Eight  columns </div>
+        <div class="col-sm-4" style="background-color:#4786ed;"> Four columns </div>
+      </div>
+      <br>
+      <p class="text-warning"> Spliting columns in a group of 3 </p>
+      <div class="row">
+        <div class="col-sm-3" style="background-color:#03b5b5;"> Three  columns </div>
+        <div class="col-sm-3" style="background-color:#4786ed;"> Three columns </div>
+        <div class="col-sm-3" style="background-color:#ced3db;"> Three columns </div>
+        <div class="col-sm-3" style="background-color:#ce29a7;"> Three columns </div>
+      </div>
+    </div>
+  </body>
+</html>
