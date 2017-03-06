@@ -26,3 +26,13 @@
 body{
   background-color: #070707;
 }
+
+.row {
+    width: 80%;
+    margin: 0px auto;
+    float: none;
+    background: white;
+}
+.thumbnail{
+  border: none;
+}
