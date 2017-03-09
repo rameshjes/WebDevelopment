@@ -3,10 +3,12 @@
 <head>
   <title>The Band</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width" initial-scale="1">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+
+
   <script src="./js/bootstrap.js"></script>
 
 </head>
@@ -110,7 +112,7 @@
             <div class="thumbnail">
               <img src="bandmember.jpg" alt="My Image" />
               <div class="caption">
-                <h3>Member Name</h3>
+                <h4>Member Name</h4>
                 <p>Insert member name here</p>
               </div>
             </div>
@@ -120,7 +122,7 @@
             <div class="thumbnail">
               <img src="bandmember.jpg" alt="My Image" />
               <div class="caption">
-                <h3>Member Name</h3>
+                <h4>Member Name</h4>
                 <p>Insert member name here</p>
               </div>
             </div>
@@ -130,7 +132,7 @@
             <div class="thumbnail">
               <img src="bandmember.jpg" alt="My Image" />
               <div class="caption">
-                <h3>Member Name</h3>
+                <h4>Member Name</h4>
                 <p>Insert member name here</p>
               </div>
             </div>
@@ -143,7 +145,7 @@
     <h1 class="text-center"> Tickets Booking</h1>
     <h5 class="text-center"><strong> Grab your tickets</strong> </h5>
     <br>
-    <div class="col-md-9 col-md-offset-3">
+    <div class="col-md-8 col-md-offset-3">
       <form>
         <div class="input-group">
           <input type="text" class="form-control"  name="March" placeholder="March"/>
@@ -154,7 +156,7 @@
         <div class="input-group">
           <input type="text" class="form-control"  name="May" placeholder="May"/>
           <span class="input-group-addon">
-            <i class="material-icons" style="font-size:18px" >looks_4</i>
+            <i class="material-icons" style="font-size:15px" >looks_4</i>
           </span>
 
         </div>
@@ -165,8 +167,8 @@
         <div class="thumbnail">
           <img src="paris.jpg" alt="Paris" />
           <div class="caption">
-            <h4><strong>Paris</strong></h4>
-            <h5> Tues 28 Mar 2017 </h5>
+            <h6><strong>Paris</strong></h6>
+            <h6> Tues 28 Mar 2017 </h6>
             <p>You will have fun and enjoyment</p>
             <button type="button" class="button" class="btn btn-primary active">Buy Tickets</button>
           </div>
@@ -177,8 +179,8 @@
         <div class="thumbnail">
           <img src="sanfran.jpg" alt="Sanfrancisco" />
           <div class="caption">
-            <h4><strong>Sanfrancisco</strong></h4>
-            <h5> Tues 28 Apr 2017 </h5>
+            <h6><strong>Sanfranso</strong></h6>
+            <h6> Tues 28 Apr 2017 </h5>
             <p>You will have fun and enjoyment</p>
             <button type="button" class="button" class="btn btn-primary active">Buy Tickets</button>
           </div>
@@ -189,24 +191,65 @@
         <div class="thumbnail">
           <img src="newyork.jpg" alt="NewYork" />
           <div class="caption">
-            <h4><strong>New York</strong></h4>
-            <h5> Tues 28 May 2017 </h5>
+            <h6><strong>New York</strong></h6>
+            <h6> Tues 28 May 2017 </h6>
             <p>You will have fun and enjoyment</p>
 
             <button type="button" class="button" class="btn btn-primary active">Buy Tickets</button>
           </div>
         </div>
       </div>
-
     </div>
+
   </div>
 
   <!-- Contact -->
-  <div class="container">
-    
+  <div id="contact" class="container">
+    <h1 id="heading1" class="text-center"> Contact </h1>
+    <h6 id="heading2" class="text-center"> For more queries, contact us here </h6>
+    <br>
+
+    <div id="icons" class="col-sm-6 ">
 
 
+        <h5><span class="material-icons" style="font-size:16px;">location_on</span> <strong> Bonn, Germany</strong> </h5>
+
+      <h5><span class="glyphicon glyphicon-phone-alt" style="font-size:16px;" ></span><strong> Phone: +49-15123xxxxx</strong> </h5>
+      <h5><span class="glyphicon glyphicon-envelope" style="font-size:16px;"></span><strong>  Email:abc@gmail.com </strong> </h5>
+
+
+    </div>
+
+    <div class="col-sm-6 ">
+      <div class= "block">
+            <input type="text"  id="usr" placeholder="Enter Name">
+            <input type="email"  id="email" placeholder="Enter Email"><br><br>
+            <textarea  rows="5" cols="42" id="comment" placeholder="Message"></textarea><br>
+            <button type="button" class="buttonSend" class="btn btn-primary active">submit</button>
+
+      </div>
+    </div>
   </div>
+
+  <!-- Map -->
+  <div id="map" class="container">
+    <div id="googleMap" style="width:100%;height:500px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(50.7374,7.0982),
+    zoom:10,
+
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMPWcDSdnkiCAU-uqPJE0fkfZAN59UfNU&callback=myMap"></script>
+  </div>
+
+
 
 </body>
 </html>
