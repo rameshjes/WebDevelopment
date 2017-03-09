@@ -25,7 +25,6 @@ it has 20px margin which we need to make 0 */
 }
 
 
-
 /*To remove arrows on carousel            */
 .right.carousel-control, .left.carousel-control {
     display: none;
@@ -45,10 +44,45 @@ it has 20px margin which we need to make 0 */
     background: white;
 }
 
-
-.thumbnail{
-  border: none;
+#Tickets{
+  padding:90px;
+  background: black;
+  width: 100%;
+  margin: 0px auto;
+  float: none;
 }
+
+#Tickets > h1{
+  color: white;
+}
+
+.input-group-addon{
+  padding: 0px;
+  text-decoration: none;
+  margin: 0px;
+}
+.input-group{
+  width: 600px;
+}
+
+
+.col-xs-3> img{
+  border: none;
+  width: 70%;
+}
+.col-xs-3> h4{
+  color:black;
+}
+
+.button{
+  background-color: black;
+}
+
+.button:hover{
+  background-color: grey;
+}
+
+
 .col-xs-4{
   text-align: center;
 }
