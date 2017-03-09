@@ -45,11 +45,12 @@ it has 20px margin which we need to make 0 */
 }
 
 #Tickets{
-  padding:90px;
+  padding:5px;
   background: black;
   width: 100%;
   margin: 0px auto;
   float: none;
+  display: block;
 }
 
 #Tickets > h1{
@@ -62,13 +63,16 @@ it has 20px margin which we need to make 0 */
   margin: 0px;
 }
 .input-group{
-  width: 600px;
+  width: 100;
 }
 
 
 .col-xs-3> img{
   border: none;
-  width: 70%;
+  display: inline-block;
+  width: 100%;
+  margin:0;
+  background-repeat: no-repeat;
 }
 .col-xs-3> h4{
   color:black;
@@ -76,13 +80,58 @@ it has 20px margin which we need to make 0 */
 
 .button{
   background-color: black;
+  color: white;
 }
 
 .button:hover{
   background-color: grey;
 }
 
+.input-group{
+  width: 75%;
+}
 
 .col-xs-4{
   text-align: center;
+}
+
+#heading1{
+  text-transform: uppercase;
+  font-family: arial;
+  padding-top:50px;
+}
+
+#heading2{
+  font-style: italic;
+  padding-top:20px;
+  color:grey;
+  font-weight: bold;
+}
+
+.block{
+display: inline-block;
+width: 100%;
+margin: 0px;
+padding: 10px;
+}
+
+#icons{
+  text-align: justify;
+  padding-left: 50px;
+
+
+}
+.buttonSend{
+  background: black;
+  color: white;
+  float:none;
+
+}
+.buttonSend:hover{
+  background: grey;
+}
+
+#map{
+  padding: 20px;
+  width: 100%;
 }
