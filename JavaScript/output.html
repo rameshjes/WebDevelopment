@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Outputs</title>
+  </head>
+  <body>
+    <h1> JavaScript Display Possibilities </h1>
+    <p> JS can "display" data in different ways: </p>
+    <p>Writing into an HTML element, using innerHTML  </p>
+    <p>Writing into the HTML output using document.write(). </p>
+    <p> Writing into an alert box, using window.alert(). </p>
+    <p> Writing into the browser console, using console.log(). </p>
+
+    <h1>Using innerHTML </h1>
+    <p id="inner"> </p>
+    <h4> Mathematical operation using inner HTML </h4>
+    <p id= "text">
+    <script>
+      document.getElementById('inner').innerHTML = "Written using inner HTML"
+      document.getElementById('text').innerHTML = 12+5;
+    </script>
+
+    <h1> Using document.write()</h1>
+    <p id="write"> </p>
+    <script>
+      document.write('Written using doc.write');
+    </script>
+
+    <h1> Using Windows.alert </h1>
+    <p> We can also use alert box to display data</p>
+    <script>
+      window.alert('Alert!! ');
+    </script>
+
+    <h1> Using console.log() </h1>
+    <p> For debugging purposes, you can use the console.log() method to display data. </p>
+    <p> Press F12 and click on console to see whether your program is reaching this point or not. </p>
+    <script>
+      console.log(6+6);
+    </script>
+
+  </body>
+</html>
