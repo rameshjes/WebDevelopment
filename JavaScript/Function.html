@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Function Example</title>
+  </head>
+  <body>
+    <p id='func'> This is paragraph, on which I will call function. click on button </p>
+    <button type="button" onclick="myFunc('func')">Click here </button>
+
+    <script>
+      // Passing parameter
+      // Always place scripts at the bottom of the <body> element improves the display speed, because script compilation slows
+      // down the display
+      // JavaScript can also be used as External scripts.
+      // External scripts are practical when the same code is used in many different web pages.
+      // JavaScript files have extension .js
+      // To use an external script, put the name of the script file in the src(source) attribute of a <script> tag.
+        function myFunc(id){
+          document.getElementById(id).innerHTML="paragraph changed using function";
+        }
+
+    </script>
+
+  </body>
+</html>
