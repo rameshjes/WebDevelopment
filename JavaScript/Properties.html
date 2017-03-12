@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Some Basic Properties</title>
+  </head>
+  <body>
+    <h1> Basic properties </h1>
+    <p> JavaScript has ability to change properties of html and CSS </p>
+    <p>Here, we will see how to change image using JS </p>
+    <img id='imgchange' src="pic_bulboff.gif" style="width:100px"><br><br>
+    <button type="button" onclick="document.getElementById('imgchange').src='pic_bulbon.gif'">Turn on light </button>
+
+    <button type="button" onclick="document.getElementById('imgchange').src='pic_bulboff.gif'">Turn off light </button>
+
+    <br> <br>
+    <h1> Style change using JS </h1>
+    <p id='stylechange'> This is written using html</p>
+    <button type="button" onclick="document.getElementById('stylechange').style.fontSize='25px'">Click here to change font size </button>
+    <button type="button" onclick="document.getElementById('stylechange').style.color='blue'">Click here to change color </button>
+
+    <br> <br>
+    <h1> JavaScript Can Show/Hide HTML Elements </h1>
+    <p id="show" style="display:none"> This was hidden </p>
+
+    <button type="button" onclick="document.getElementById('show').style.display='block'">Click here to Show something </button>
+
+
+  </body>
+</html>
