@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Operators</title>
+  </head>
+  <body>
+    <h1> Example of Object </h1>
+
+    <p id="demo"></p>
+
+    <h1> data type </h1>
+    <p id ="type"></p>
+    <h1> Using Function with parameters </h1>
+    <p id = "add"></p>
+    <h1> JS BuiltIn Methods </h1>
+    <p id="built"> </p>
+
+    <h1> onkeydown Event </h1>
+    <p> Press something to see some thing</p>
+
+    <input  type="text" onkeydown="myFunction()">
+    <h1> JavaScript Array </h1>
+    <p id="array">  </p>
+
+    <script>
+      var person = {
+        firstName : "Adam",
+        lastName : "Doe",
+        age: 40,
+        height: 5.5,
+        // method inside object
+        inputfunction : function(name){
+
+          return "you entered:" + name
+
+        }
+      };
+
+
+      document.getElementById("demo").innerHTML =
+        person.firstName + " is first name " + person.lastName + " is last name " + "and his age is  " + person.age +
+        " and height is  " + person.height + "<br>" + person.inputfunction(" your name");
+
+
+      //document.getElementById("func").innerHTML =  person.inputfunction("your name")
+      document.getElementById("type").innerHTML = typeof person
+
+      //document.write('This shows type of variable')
+
+      // Function
+      document.getElementById('add').innerHTML = addition(4,5)
+
+      function addition(a,b) {
+        return a+b
+      }
+
+      // Built method
+
+      var message = "Hello Guys";
+      var newmessage = message.toUpperCase();
+      //document.getElementById("built").innerHTML = message
+      document.getElementById("built").innerHTML = newmessage
+
+      // Function when user presses any key
+
+      function myFunction(){
+        alert('you pressed your keyboard key');
+      }
+      console.log(4+3);
+      var fruits, numberoffruits,text,i;
+
+      fruits = ["banana","orange","apple"];
+
+      numberoffruits = fruits.length;
+
+      text = "<ul>";
+      for (i = 0; i < numberoffruits; i++){
+        text += "<li>" + fruits[i] + "</li>";
+      }
+
+      text += "</ul>";
+
+      document.getElementById("array").innerHTML = text;
+
+    </script>
+
+  </body>
+</html>
