@@ -80,7 +80,8 @@
  <ul>
    <li> Union (array1 + array2)</li>
    <li> Equality( == returns true if array1 and array2 have same key/value pairs) </li>
-   <li> Identity(=== returns true if array1 and array2 have same key/value pairs in same order and of same types) </li>
+   <li> Identity(=== returns true if array1 and array2 have same key/value
+     pairs in same order and of same types) </li>
    <li>  Inequality (!= returns true if array1 is not equal to array2) </li>
    <li>  Non-Identity (returns true if array1 is not identical to array2) </li>
 </ul>
@@ -97,7 +98,9 @@ print_r($x + $y);
  ?>
 
 <h3> Loop through associate arrays </h3>
-<p> To loop through and print all the values of an associative array, you could use a foreach loop, like this: </p>
+
+<p> To loop through and print all the values of an associative array,
+  you could use a foreach loop, like this: </p>
 
 <?php
 $age = array("Ali"=> 35, "Ben" => 40, "Joe" => 10);
@@ -106,6 +109,34 @@ foreach ($age as $y => $y_new) {
   # code...
   echo "Key= ". $y . ", Value= ". $y_new;
   echo "<br>";
+}
+ ?>
+
+<h3> Sorting Functions for Arrays </h3>
+<p>The elements in an array can be sorted in alphabetical or numerical order,
+  descending or ascending.
+ </p>
+<ul>
+<li> sort() - sort arrays in ascending order </li>
+<li> rsort() - sort arrays in descending order </li>
+<li> asort() - sort associative arrays in ascending order,
+  according to the value </li>
+<li> ksort() - sort associative arrays in ascending order,
+  according to the key </li>
+<li> arsort() - sort associative arrays in descending order,
+  according to the value </li>
+<li> krsort() - sort associative arrays in descending order, according to the key </li>
+</ul>
+<?php
+$numbers = array(4, 16, 21, 22, 11);
+
+sort($numbers);
+
+$arrlength = count($numbers);
+
+for($x = 0; $x < $arrlength; $x++) {
+    echo $numbers[$x];
+    echo "<br>";
 }
  ?>
 
