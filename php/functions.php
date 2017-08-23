@@ -83,9 +83,12 @@
 				echo "<br> x =  $x <br> ";
 				echo "y = $y <br> ";
 				echo "<b> Product is = </b> ". $x * $y. "<br>";
+				$z  = $x * $y;
+				return $z;
 
 			}
 			getProduct(10,40);
+
 			 ?>
 
     </body>
