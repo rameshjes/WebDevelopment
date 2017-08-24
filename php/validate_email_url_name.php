@@ -2,6 +2,11 @@
 <html>
 <head>
 <h1> Validate Email, URL, and Name </h1>
+
+<style>
+.error{color:#FF0000;}
+</style>
+
 </head>
 <body>
   <p> 	The preg_match() function searches a string for pattern, returning true
@@ -32,7 +37,7 @@
     Website: <input type="text" name="url"><br><br>
     <span class="error">* <?php echo $msg;?></span>
 
-    Message: <br><textarea rows = "5" cols = "25" name="message"></textarea>
+    Message: <br><textarea rows = "5" cols = "28" name="message"></textarea>
       <br>
       <br>
     <input type="submit">
