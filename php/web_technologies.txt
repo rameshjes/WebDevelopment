@@ -1,7 +1,7 @@
 i. Hyper Text Markup Language(HTML)
 ii. Cascading Style Sheets(CSS)
 iii. JavaScript
-iv. Asynchronous JavaScript(AJAX)
+iv. Asynchronous JavaScript(AJAX) and XML
 v. Extensible Markup Language(XML)
 vi. Hypertext Preprocessor(PHP)
 vii. Structured Query Language(SQL)
