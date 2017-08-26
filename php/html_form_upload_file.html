@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h1> Upload Image </h1>
+	</head>
+	<body>
+	<ul> Following operations for file upload are performed:
+		<li> Check File name        </li>
+		<li> Check File extension </li>
+		<li> Check File Size          </li>
+		<li> Check File Error       </li>
+		<li> Check File already exists  in directory   </li>
+		<li> Upload File </li>
+
+
+	</ul>
+		<!--The form also needs the following attribute: enctype="multipart/form-data".
+		It specifies which content-type to use when submitting the form> -->
+
+    <form action="file_upload.php" method="post" enctype="multipart/form-data">
+
+			<b> Click Here to Upload file: </b>
+			<!-- <input type="hidden" name="upload" value="1"> -->
+			<br> <br> <input type="file" name="file">
+          <br> <br><input type="submit" value="Upload">
+
+		</form>
+
+  </body>
+</html>
